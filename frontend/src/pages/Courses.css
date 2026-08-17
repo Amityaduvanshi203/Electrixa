@@ -1,0 +1,1334 @@
+/* =========================================================
+   ELECTRIXA COURSES PAGE
+   PREMIUM • CLEAN • MODERN • RESPONSIVE
+========================================================= */
+
+.elx-courses-page {
+  --primary: #f5b400;
+  --primary-dark: #d99b00;
+  --dark: #111820;
+  --dark-2: #1b252f;
+  --text: #202a33;
+  --muted: #697580;
+  --light: #f5f7f9;
+  --white: #ffffff;
+  --border: #e4e9ed;
+
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background: #f5f7f9;
+  color: var(--text);
+
+  font-family:
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.elx-main-hero {
+  position: relative;
+  min-height: 620px;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+
+  padding: 75px 7% 65px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(245, 180, 0, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #101820 0%, #17222d 55%, #101820 100%);
+
+  color: white;
+  overflow: hidden;
+}
+
+
+/* Decorative background */
+
+.elx-main-hero::before {
+  content: "";
+  position: absolute;
+
+  width: 480px;
+  height: 480px;
+
+  right: -180px;
+  bottom: -220px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(245, 180, 0, 0.16);
+  box-shadow:
+    0 0 0 80px rgba(245, 180, 0, 0.025),
+    0 0 0 160px rgba(245, 180, 0, 0.015);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.elx-main-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 650px;
+}
+
+.elx-main-hero-content h1 {
+  margin: 0 0 25px;
+
+  font-size: clamp(48px, 5.2vw, 82px);
+  line-height: 0.98;
+
+  font-weight: 900;
+  letter-spacing: -3px;
+
+  text-transform: uppercase;
+}
+
+.elx-main-hero-content h1 span {
+  color: var(--primary);
+
+  text-shadow:
+    0 0 25px rgba(245, 180, 0, 0.18);
+}
+
+.elx-main-hero-content p {
+  max-width: 580px;
+
+  margin: 0 0 32px;
+
+  color: #c9d1d8;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.elx-main-hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 42px;
+}
+
+.elx-hero-primary-btn,
+.elx-hero-secondary-btn {
+  height: 52px;
+  padding: 0 25px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.elx-hero-primary-btn {
+  border: none;
+
+  background: var(--primary);
+  color: #111820;
+
+  box-shadow:
+    0 10px 30px rgba(245, 180, 0, 0.2);
+}
+
+.elx-hero-primary-btn span {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.elx-hero-primary-btn:hover {
+  transform: translateY(-3px);
+
+  background: #ffc52b;
+
+  box-shadow:
+    0 15px 35px rgba(245, 180, 0, 0.28);
+}
+
+.elx-hero-secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+
+  backdrop-filter: blur(10px);
+}
+
+.elx-hero-secondary-btn:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(245, 180, 0, 0.6);
+}
+
+
+/* =========================================================
+   HERO FEATURES
+========================================================= */
+
+.elx-main-hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.elx-main-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  min-width: 125px;
+}
+
+.elx-feature-icon {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: rgba(245, 180, 0, 0.12);
+  border: 1px solid rgba(245, 180, 0, 0.2);
+
+  color: var(--primary);
+
+  font-size: 18px;
+}
+
+.elx-main-feature strong,
+.elx-main-feature small {
+  display: block;
+}
+
+.elx-main-feature strong {
+  font-size: 13px;
+  color: white;
+}
+
+.elx-main-feature small {
+  margin-top: 3px;
+
+  color: #8f9ba5;
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.elx-main-hero-visual {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 480px;
+}
+
+.elx-main-hero-visual img {
+  position: relative;
+  z-index: 2;
+
+  width: min(100%, 560px);
+  max-height: 520px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 30px 50px rgba(0, 0, 0, 0.35));
+
+  animation: elxHeroFloat 5s ease-in-out infinite;
+}
+
+@keyframes elxHeroFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* =========================================================
+   FLOATING TAGS
+========================================================= */
+
+.elx-floating-tag {
+  position: absolute;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 15px;
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: #17202a;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.2);
+
+  backdrop-filter: blur(12px);
+
+  animation: elxTagFloat 4s ease-in-out infinite;
+}
+
+.elx-floating-tag span {
+  color: var(--primary-dark);
+  font-size: 16px;
+}
+
+.elx-tag-electrical {
+  top: 12%;
+  left: 4%;
+}
+
+.elx-tag-electronics {
+  top: 32%;
+  right: 0;
+  animation-delay: 0.5s;
+}
+
+.elx-tag-software {
+  bottom: 25%;
+  left: 0;
+  animation-delay: 1s;
+}
+
+.elx-tag-ai {
+  bottom: 10%;
+  right: 6%;
+  animation-delay: 1.5s;
+}
+
+@keyframes elxTagFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+
+/* =========================================================
+   CATEGORY SECTION
+========================================================= */
+
+.elx-courses-categories-section {
+  width: min(1400px, 90%);
+  margin: 55px auto 30px;
+}
+
+.elx-courses-category-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.elx-courses-category-title h3 {
+  margin: 0;
+
+  font-size: 13px;
+  letter-spacing: 1.8px;
+
+  color: #697580;
+  font-weight: 800;
+}
+
+.elx-courses-categories-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(9, minmax(120px, 1fr));
+
+  gap: 12px;
+
+  overflow-x: auto;
+  padding: 4px 2px 12px;
+
+  scrollbar-width: thin;
+}
+
+
+/* =========================================================
+   CATEGORY CARD
+========================================================= */
+
+.elx-courses-category-card {
+  min-height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 14px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  background: white;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.elx-courses-category-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(245, 180, 0, 0.55);
+
+  box-shadow:
+    0 12px 28px rgba(17, 24, 32, 0.08);
+}
+
+.elx-courses-category-card.elx-courses-active {
+  background: #fff9e7;
+
+  border-color: var(--primary);
+
+  box-shadow:
+    0 8px 25px rgba(245, 180, 0, 0.12);
+}
+
+.elx-courses-category-icon {
+  width: 45px;
+  height: 45px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 12px;
+
+  background: #f3f5f7;
+
+  color: var(--dark);
+
+  font-size: 21px;
+  font-weight: 800;
+
+  transition: 0.25s ease;
+}
+
+.elx-courses-active .elx-courses-category-icon,
+.elx-courses-category-card:hover .elx-courses-category-icon {
+  background: var(--primary);
+  color: #111820;
+}
+
+.elx-courses-cat-name {
+  text-align: center;
+
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+
+  color: #26323c;
+}
+
+.elx-courses-cat-count {
+  font-size: 10px;
+  color: #87929b;
+}
+
+
+/* =========================================================
+   FILTER SECTION
+========================================================= */
+
+.elx-courses-filters-section {
+  width: 100%;
+
+  margin: 30px 0;
+
+  background: white;
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.elx-courses-filters-container {
+  width: min(1400px, 90%);
+  margin: auto;
+
+  padding: 18px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+/* SEARCH */
+
+.elx-courses-search-box {
+  position: relative;
+
+  width: min(430px, 100%);
+}
+
+.elx-courses-search-box input {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 18px 0 48px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: #f8fafb;
+
+  color: var(--text);
+
+  outline: none;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.elx-courses-search-box input:focus {
+  border-color: var(--primary);
+
+  background: white;
+
+  box-shadow:
+    0 0 0 4px rgba(245, 180, 0, 0.1);
+}
+
+.elx-courses-search-box input::placeholder {
+  color: #9aa4ac;
+}
+
+.elx-courses-search-icon {
+  position: absolute;
+
+  left: 17px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #737f89;
+
+  font-size: 22px;
+
+  pointer-events: none;
+}
+
+
+/* FILTERS */
+
+.elx-courses-filter-group {
+  display: flex;
+  gap: 9px;
+}
+
+.elx-courses-filter-group select {
+  height: 46px;
+
+  min-width: 145px;
+
+  padding: 0 35px 0 13px;
+
+  border: 1px solid var(--border);
+  border-radius: 9px;
+
+  background: white;
+  color: #34414b;
+
+  outline: none;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.elx-courses-filter-group select:hover,
+.elx-courses-filter-group select:focus {
+  border-color: var(--primary);
+}
+
+
+/* =========================================================
+   COURSE SECTION
+========================================================= */
+
+.elx-courses-grid-section {
+  width: min(1400px, 90%);
+  margin: 55px auto;
+}
+
+.elx-courses-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.elx-courses-heading span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--primary-dark);
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 1.8px;
+}
+
+.elx-courses-heading h2 {
+  margin: 0;
+
+  color: var(--dark);
+
+  font-size: 30px;
+  font-weight: 900;
+
+  letter-spacing: -0.7px;
+}
+
+.elx-courses-heading p {
+  margin: 0;
+
+  color: #7c8790;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   COURSE GRID
+========================================================= */
+
+.elx-courses-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.elx-courses-course-card {
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 18px rgba(17, 24, 32, 0.045);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.elx-courses-course-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(245, 180, 0, 0.45);
+
+  box-shadow:
+    0 20px 40px rgba(17, 24, 32, 0.1);
+}
+
+
+/* COURSE IMAGE */
+
+.elx-courses-course-image {
+  position: relative;
+
+  height: 190px;
+
+  overflow: hidden;
+
+  background: #e9edf0;
+}
+
+.elx-courses-course-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.elx-courses-course-card:hover
+.elx-courses-course-image img {
+  transform: scale(1.06);
+}
+
+
+/* TAG */
+
+.elx-courses-course-tag {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  background: var(--primary);
+
+  color: #111820;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+
+/* COURSE CONTENT */
+
+.elx-courses-course-content {
+  padding: 18px;
+}
+
+.elx-courses-course-category {
+  margin-bottom: 7px;
+
+  color: var(--primary-dark);
+
+  font-size: 10px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.elx-courses-course-content h3 {
+  min-height: 48px;
+
+  margin: 0 0 13px;
+
+  color: #202a33;
+
+  font-size: 16px;
+  line-height: 1.45;
+
+  font-weight: 800;
+}
+
+
+/* META */
+
+.elx-courses-course-meta {
+  display: flex;
+  gap: 8px;
+
+  margin-bottom: 13px;
+}
+
+.elx-courses-course-meta span {
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: #f1f4f6;
+
+  color: #68747d;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* RATING */
+
+.elx-courses-course-rating {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #edf0f2;
+}
+
+.elx-courses-stars {
+  color: #f5b400;
+
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.elx-courses-course-rating strong {
+  color: #26313a;
+  font-size: 12px;
+}
+
+.elx-courses-course-rating small {
+  color: #89939b;
+  font-size: 11px;
+}
+
+
+/* PRICE + BUTTON */
+
+.elx-courses-course-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 15px;
+}
+
+.elx-courses-course-price {
+  color: #151e26;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.elx-courses-view-details {
+  padding: 8px 11px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #111820;
+  color: white;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.elx-courses-view-details:hover {
+  background: var(--primary);
+  color: #111820;
+}
+
+
+/* =========================================================
+   VIEW ALL BUTTON
+========================================================= */
+
+.elx-courses-view-all-btn {
+  display: block;
+
+  margin: 35px auto 0;
+
+  padding: 13px 25px;
+
+  border: 1px solid #d8dee3;
+  border-radius: 8px;
+
+  background: white;
+  color: #202a33;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.elx-courses-view-all-btn:hover {
+  background: #111820;
+  color: white;
+
+  border-color: #111820;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   NO COURSES
+========================================================= */
+
+.elx-courses-no-courses {
+  padding: 70px 20px;
+
+  text-align: center;
+
+  background: white;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.elx-courses-no-course-icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.elx-courses-no-courses h3 {
+  margin: 0 0 8px;
+
+  color: #202a33;
+}
+
+.elx-courses-no-courses p {
+  margin: 0;
+
+  color: #7d8790;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.elx-courses-course-benefits {
+  width: min(1400px, 90%);
+
+  margin: 70px auto 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.elx-courses-benefit-card {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+
+  padding: 20px;
+
+  background: white;
+
+  border: 1px solid var(--border);
+  border-radius: 13px;
+
+  transition: 0.25s ease;
+}
+
+.elx-courses-benefit-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(245, 180, 0, 0.4);
+
+  box-shadow:
+    0 12px 30px rgba(17, 24, 32, 0.07);
+}
+
+.elx-courses-benefit-icon {
+  flex-shrink: 0;
+
+  width: 43px;
+  height: 43px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: #fff7dc;
+
+  color: var(--primary-dark);
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.elx-courses-benefit-card h4 {
+  margin: 2px 0 6px;
+
+  color: #26313a;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.elx-courses-benefit-card p {
+  margin: 0;
+
+  color: #7b858e;
+
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1150px) {
+
+  .elx-main-hero {
+    grid-template-columns: 1fr 0.8fr;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .elx-courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .elx-courses-course-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .elx-courses-filter-group {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .elx-courses-filter-group select {
+    min-width: 130px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .elx-main-hero {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    padding:
+      60px 6%
+      30px;
+  }
+
+  .elx-main-hero-content {
+    text-align: center;
+    margin: auto;
+  }
+
+  .elx-main-hero-content h1 {
+    font-size: clamp(43px, 13vw, 65px);
+    letter-spacing: -2px;
+  }
+
+  .elx-main-hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 14px;
+  }
+
+  .elx-main-hero-buttons {
+    justify-content: center;
+  }
+
+  .elx-main-hero-features {
+    justify-content: center;
+  }
+
+  .elx-main-hero-visual {
+    min-height: 360px;
+    margin-top: 10px;
+  }
+
+  .elx-main-hero-visual img {
+    max-width: 470px;
+  }
+
+  .elx-floating-tag {
+    padding: 8px 11px;
+    font-size: 10px;
+  }
+
+  .elx-tag-electrical {
+    left: 2%;
+  }
+
+  .elx-tag-electronics {
+    right: 1%;
+  }
+
+  .elx-tag-software {
+    left: 3%;
+    bottom: 15%;
+  }
+
+  .elx-tag-ai {
+    right: 3%;
+    bottom: 5%;
+  }
+
+
+  /* Categories */
+
+  .elx-courses-categories-section {
+    width: 92%;
+    margin-top: 35px;
+  }
+
+  .elx-courses-categories-grid {
+    grid-template-columns:
+      repeat(9, 125px);
+
+    overflow-x: auto;
+  }
+
+
+  /* Filters */
+
+  .elx-courses-filters-container {
+    width: 92%;
+
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .elx-courses-search-box {
+    width: 100%;
+  }
+
+  .elx-courses-filter-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+  }
+
+  .elx-courses-filter-group select {
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  /* Courses */
+
+  .elx-courses-grid-section {
+    width: 92%;
+    margin-top: 40px;
+  }
+
+  .elx-courses-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .elx-courses-heading h2 {
+    font-size: 25px;
+  }
+
+  .elx-courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .elx-courses-course-image {
+    height: 175px;
+  }
+
+
+  /* Benefits */
+
+  .elx-courses-course-benefits {
+    width: 92%;
+
+    grid-template-columns: 1fr;
+
+    margin-top: 50px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+  .elx-main-hero {
+    padding-top: 45px;
+  }
+
+  .elx-main-hero-content h1 {
+    font-size: 43px;
+  }
+
+  .elx-main-hero-content p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .elx-main-hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .elx-hero-primary-btn,
+  .elx-hero-secondary-btn {
+    width: 100%;
+  }
+
+  .elx-main-hero-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .elx-main-feature {
+    min-width: 0;
+  }
+
+  .elx-main-hero-visual {
+    min-height: 290px;
+  }
+
+  .elx-main-hero-visual img {
+    width: 100%;
+  }
+
+  .elx-floating-tag {
+    transform: scale(0.85);
+  }
+
+
+  /* Filters */
+
+  .elx-courses-filter-group {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* One course per row */
+
+  .elx-courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .elx-courses-course-image {
+    height: 205px;
+  }
+
+  .elx-courses-course-content h3 {
+    min-height: auto;
+  }
+
+
+  /* Benefits */
+
+  .elx-courses-benefit-card {
+    padding: 17px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.elx-courses-page button:focus-visible,
+.elx-courses-page select:focus-visible,
+.elx-courses-page input:focus-visible {
+  outline: 3px solid rgba(245, 180, 0, 0.3);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .elx-main-hero-visual img,
+  .elx-floating-tag {
+    animation: none;
+  }
+
+  .elx-courses-page *,
+  .elx-courses-page *::before,
+  .elx-courses-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

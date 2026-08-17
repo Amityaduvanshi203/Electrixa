@@ -1,0 +1,1001 @@
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   PROJECT ORDER HERO
+===================================================== */
+
+.po-hero {
+  width: 100%;
+  min-height: 410px;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      #03080f 0%,
+      #07121f 45%,
+      #081724 100%
+    );
+}
+
+
+.po-hero-inner {
+  min-height: 410px;
+
+  display: grid;
+  grid-template-columns: 46% 54%;
+
+  align-items: center;
+
+  gap: 20px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.po-hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 35px 0;
+}
+
+
+.po-hero-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #f5c400;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+
+.po-hero-content h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 4.5vw, 64px);
+
+  line-height: 0.98;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+
+.po-hero-content h1 span {
+  color: #f5c400;
+}
+
+
+.po-hero-content p {
+  max-width: 540px;
+
+  margin: 20px 0;
+
+  color: #d4dce5;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* =====================================================
+   HERO FEATURES
+===================================================== */
+
+.po-hero-features {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+
+.po-hero-features span {
+  color: #ffffff;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.po-hero .hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+.po-hero .btn {
+  padding: 11px 22px;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.po-primary {
+  background: #f5c400;
+
+  color: #07121f;
+
+  border: 1px solid #f5c400;
+}
+
+
+.po-primary:hover {
+  background: #ffd52e;
+
+  transform: translateY(-2px);
+}
+
+
+.po-outline {
+  background: transparent;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+
+.po-outline:hover {
+  background: #ffffff;
+
+  color: #07121f;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.po-hero-media {
+  width: 100%;
+  height: 100%;
+
+  min-height: 410px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+
+.po-hero-media img {
+  width: 100%;
+
+  max-width: 700px;
+
+  height: 350px;
+
+  object-fit: contain;
+
+  object-position: right center;
+
+  display: block;
+}
+
+
+/* =====================================================
+   HERO GLOW
+===================================================== */
+
+.po-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  right: 3%;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 130, 255, 0.14) 0%,
+      rgba(0, 130, 255, 0.04) 35%,
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   PROCESS SECTION
+===================================================== */
+
+.po-process {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.po-process h3 {
+  color: #1a3b5d;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.process-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.process-item {
+  background: #f5f9ff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 80px;
+  transition: transform 0.3s;
+}
+
+.process-item:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a3b5d;
+  margin-bottom: 5px;
+}
+
+.process-item small {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+
+/* =====================================================
+   ORDER FORM
+===================================================== */
+
+.po-order {
+  padding: 0 20px 60px;
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.order-form {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.order-form h3 {
+  color: #1a3b5d;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.form-subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.status-message {
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.status-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #1a3b5d;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: #e74c3c;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e7f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1a3b5d;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+
+/* =====================================================
+   FILE UPLOAD
+===================================================== */
+
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.file-upload-wrapper input[type="file"] {
+  display: none;
+}
+
+.file-upload-label {
+  padding: 10px 25px;
+  background: #e8f0fe;
+  color: #1a3b5d;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.file-upload-label:hover {
+  background: #d0dbe8;
+}
+
+.file-name {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
+/* =====================================================
+   CHECKBOXES
+===================================================== */
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1a3b5d;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.form-actions .btn {
+  flex: 1;
+  padding: 14px;
+  font-size: 1rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.order-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h4 {
+  color: #1a3b5d;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  padding: 8px 0;
+  color: #444;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.card ul li:last-child {
+  border-bottom: none;
+}
+
+.card.stats {
+  text-align: center;
+}
+
+.stat-big {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #1a3b5d;
+}
+
+.card.stats p {
+  color: #666;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   SIDEBAR BUTTONS
+===================================================== */
+
+.btn.whatsapp {
+  background: #25d366;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.btn.whatsapp:hover {
+  background: #1da851;
+}
+
+.btn.call {
+  background: #1a3b5d;
+  color: white;
+  width: 100%;
+  border: none;
+}
+
+.btn.call:hover {
+  background: #2c5f8a;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+  .po-hero-inner {
+    grid-template-columns: 48% 52%;
+    min-height: 370px;
+  }
+
+  .po-hero-media {
+    min-height: 370px;
+  }
+
+  .po-hero-media img {
+    height: 300px;
+  }
+
+  .po-hero-content h1 {
+    font-size: 44px;
+  }
+
+  .order-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .po-hero {
+    min-height: auto;
+  }
+
+  .po-hero-inner {
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+
+  .po-hero-content {
+    padding: 0;
+    max-width: 600px;
+  }
+
+  .po-hero-content p {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .po-hero-features {
+    justify-content: center;
+    gap: 10px 18px;
+  }
+
+  .po-hero .hero-actions {
+    justify-content: center;
+  }
+
+  .po-hero-media {
+    min-height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .po-hero-media img {
+    width: 100%;
+    max-width: 500px;
+    height: 240px;
+    object-position: center;
+  }
+
+  .process-line {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-item {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .order-form {
+    padding: 20px;
+  }
+
+  .checkboxes {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .stat-big {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 450px) {
+
+  .po-hero-inner {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .po-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .po-hero-content p {
+    font-size: 12px;
+  }
+
+  .po-hero-features {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .po-hero .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .po-hero .btn {
+    width: 100%;
+  }
+
+  .po-hero-media img {
+    height: 200px;
+  }
+}
+/* =====================================================
+   PROJECT SHOWCASE
+===================================================== */
+
+.project-showcase {
+  width: 100%;
+
+  padding: 28px 0 32px;
+
+  background: #f7f7f8;
+}
+
+.project-showcase .container {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 0 25px;
+}
+
+
+/* =====================================================
+   GROUP
+===================================================== */
+
+.project-showcase-group {
+  margin-bottom: 25px;
+}
+
+.project-showcase-group:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.project-showcase-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 10px;
+}
+
+.showcase-line {
+  width: 4px;
+  height: 20px;
+
+  flex-shrink: 0;
+
+  border-radius: 3px;
+
+  background: #ffc000;
+}
+
+.project-showcase-title h2 {
+  margin: 0;
+
+  color: #111;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.showcase-count {
+  margin-left: auto;
+
+  color: #888;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   HARDWARE TITLE
+===================================================== */
+
+.hardware-title .showcase-line {
+  background: #1677d2;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.showcase-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 9px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.showcase-card {
+  min-width: 0;
+
+  min-height: 92px;
+
+  padding: 11px;
+
+  background: #fff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 7px;
+
+  box-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.045);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.showcase-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #ffc000;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* NUMBER */
+
+.showcase-card > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #ffc000;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+/* TITLE */
+
+.showcase-card h3 {
+  margin: 0 0 6px;
+
+  color: #171717;
+
+  font-size: 10px;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+}
+
+
+/* CATEGORY */
+
+.showcase-card p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 7.5px;
+
+  line-height: 1.3;
+}
+
+
+/* HARDWARE CARD */
+
+.hardware-card > span {
+  color: #1677d2;
+}
+
+.hardware-card:hover {
+  border-color: #1677d2;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .showcase-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .project-showcase {
+    padding: 22px 0 25px;
+  }
+
+  .project-showcase .container {
+    padding: 0 12px;
+  }
+
+  .project-showcase-title h2 {
+    font-size: 13px;
+  }
+
+  .showcase-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 7px;
+  }
+
+  .showcase-card {
+    min-height: 85px;
+
+    padding: 9px;
+  }
+
+  .showcase-card h3 {
+    font-size: 9px;
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+
+  .showcase-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .showcase-card {
+    min-height: 80px;
+  }
+
+}

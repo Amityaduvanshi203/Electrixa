@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import "./Courses.css";
-
+import { Link } from "react-router-dom";
 import heroImage from "../assets/sh .png";
 
 import smartHomeImage from "../assets/ads.jpeg";
@@ -362,40 +362,32 @@ const Courses = () => {
 
 
   {/* ================= RIGHT IMAGE ================= */}
-  <div className="elx-main-hero-visual">
+  <div className="hero-right">
 
-    <img
-      src={heroImage}
-      alt="Electrixa Hardware and Software"
-    />
+  <img
+    src={heroImage}
+    alt="Electrixa Technology"
+  />
 
+  {/* Code */}
+  <Link to="/code" className="tech-tag tag-electrical">
+    ⚡ Code
+  </Link>
 
-    {/* ================= FLOATING TAGS ================= */}
+  {/* Courses */}
+  <Link to="/courses" className="tech-tag tag-electronics">
+    ▣ Electronics
+  </Link>
 
-    <div className="elx-floating-tag elx-tag-electrical">
-      <span>ϟ</span>
-      Electrical
-    </div>
+  <Link to="/courses" className="tech-tag tag-software">
+    &lt;/&gt; Software
+  </Link>
 
+  <Link to="/courses" className="tech-tag tag-ai">
+    🧠 IoT & AI
+  </Link>
 
-    <div className="elx-floating-tag elx-tag-electronics">
-      <span>▣</span>
-      Electronics
-    </div>
-
-
-    <div className="elx-floating-tag elx-tag-software">
-      <span>&lt;/&gt;</span>
-      Software
-    </div>
-
-
-    <div className="elx-floating-tag elx-tag-ai">
-      <span>⌁</span>
-      IoT &amp; AI
-    </div>
-
-  </div>
+</div>
 
 </section>
 

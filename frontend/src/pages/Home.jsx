@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-
+import { Link } from "react-router-dom";
 /* =========================================================
    IMAGES
    All images are inside: src/assets/
@@ -10,11 +10,11 @@ import heroImage from "../assets/HERO.png";
 
 import whyImage from "../assets/why.png";
 
-import smartHomeImage from "../assets/ads.jpeg";
-import solarImage from "../assets/ads.jpeg";
-import droneImage from "../assets/ads.jpeg";
-import faceImage from "../assets/ads.jpeg";
-import robotImage from "../assets/ads.jpeg";
+import smartHomeImage from "../assets/FEATURED PROJECTS/home.png";
+import solarImage from "../assets/FEATURED PROJECTS/solar.png";
+import droneImage from "../assets/FEATURED PROJECTS/diy.png";
+import faceImage from "../assets/FEATURED PROJECTS/water.png";
+import robotImage from "../assets/FEATURED PROJECTS/robot.png";
 
 /* =========================================================
    SERVICES
@@ -270,28 +270,30 @@ function Home() {
 
         <div className="hero-right">
 
-          <img
-            src={heroImage}
-            alt="Electrixa Technology"
-          />
+  <img
+    src={heroImage}
+    alt="Electrixa Technology"
+  />
 
-          <div className="tech-tag tag-electrical">
-            ⚡ Electrical
-          </div>
+  {/* Code */}
+  <Link to="/code" className="tech-tag tag-electrical">
+    ⚡ Code
+  </Link>
 
-          <div className="tech-tag tag-electronics">
-            ▣ Electronics
-          </div>
+  {/* Courses */}
+  <Link to="/courses" className="tech-tag tag-electronics">
+    ▣ Electronics
+  </Link>
 
-          <div className="tech-tag tag-software">
-            &lt;/&gt; Software
-          </div>
+  <Link to="/courses" className="tech-tag tag-software">
+    &lt;/&gt; Software
+  </Link>
 
-          <div className="tech-tag tag-ai">
-            🧠 IoT & AI
-          </div>
+  <Link to="/courses" className="tech-tag tag-ai">
+    🧠 IoT & AI
+  </Link>
 
-        </div>
+</div>
 
       </section>
 

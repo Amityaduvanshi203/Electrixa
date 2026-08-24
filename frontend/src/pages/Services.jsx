@@ -138,6 +138,31 @@ const ServicesPage = () => {
         "24/7 Technical Support",
       ],
     },
+
+     {
+      category: "UI/UX Design",
+      icon: "⚙",
+      iconClass: "darkblue",
+      description:
+        "Ongoing support and maintenance for your systems and products.",
+      items: [
+        "System Maintenance",
+        "Bug Fixing",
+        "24/7 Technical Support",
+      ],
+    },
+     {
+      category: "Projects ",
+      icon: "⚙",
+      iconClass: "darkblue",
+      description:
+        "Ongoing support and maintenance for your systems and products.",
+      items: [
+        "System Maintenance",
+        "Bug Fixing",
+        "24/7 Technical Support",
+      ],
+    },
   ];
 
   // =====================================================
